@@ -1,95 +1,70 @@
-> If you are following the HackYourFuture curriculum we recommend you to start with module 1: [HTML/CSS/GIT](https://github.com/HackYourFuture/HTML-CSS). To get a complete overview of the HackYourFuture curriculum first, click [here](https://github.com/HackYourFuture/curriculum).
+# Getting Started with Create React App
 
-> Please help us improve and share your feedback! If you find better tutorials or links, please share them by [opening a pull request](https://github.com/HackYourFuture/React/pulls).
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Module #7 - React.js: Building dynamic UIs with modern JavaScript (Frontend)
+## Available Scripts
 
-![React Module](./assets/react.png)
+In the project directory, you can run:
 
-Welcome to the React module! Congratulations on making it this far!
+### `npm start`
 
-In these 4 weeks we will go back to the frontend and learn how to make faster, more modern user interfaces. In the HTML and JavaScript modules you've learned all about creating webpages that that hold unchanging data. No matter who is using the website, the data will always be the same. We call this a `static website`. At the same time you've build various HTML pages so the user is able to access various parts of the website. We call this a `multi-page application (MPA)`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-In the Node.js module you've learned about how to change the content of the page, based on the user's input, using a `templating engine`. Type in a keyword and the server sends back a `template` with customized data. We call this a `dynamic website`. However, we did it in such a way were we still had to send different pages to the client depending on the URL (for example, `/` or `/users`). This is also an MPA.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-In this module, however, you'll learn how to make more complex websites. Though, we won't be calling them websites anymore: they'll be `web applications`. They're not just informational, but allow the user to interact with it. This similar to any application on your desktop. These React applications will also deal with `dynamic data`: its `state` changes depending on who's using it.
+### `npm test`
 
-Besides being dynamic, React applications also are `single page applications (SPA)`. Essentially, this means that on loading the whole application (every page and its contents) is accessible to the user, without the need to send requests to the server to get another page.
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-## Before you start
+### `npm run build`
 
-In order to properly work through this module smoothly we're going to use software that will allow us to write React applications with ease. It's called `create-react-app`.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-Go to your command line and execute the following:
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
-```bash
-npm install -g create-react-app
-```
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-Now verify that you have it by executing the following:
+### `npm run eject`
 
-```bash
-create-react-app --version
-```
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-It should be at least version `2.1.x`.
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-## Learning goals
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-In order to successfully complete this module you will need to master the following:
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-- Understand the React way of thinking about `user interfaces`
-- Know the importance and place of `state` and how to pass it down
-- Be able to work with different `hooks` and even create your own
-- Recognize the utility of `modularization`
-- Putting emphasis on writing reusable code (`components`)
-- How to handle `client-side routing`
+## Learn More
 
-## How to use this repository
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-### Repository content
+To learn React, check out the [React documentation](https://reactjs.org/).
 
-This repository consists of 3 essential parts:
+### Code Splitting
 
-1. `README`: this document contains all the required theory you need to understand **while** working on the homework. It contains not only the right resources to learn about the concepts, but also lectures done by HackYourFuture teachers. This is the **first thing** you should start with every week
-2. `MAKEME`: this document contains the instructions for each week's homework. Start with the exercises rather quickly, so that you can ground the concepts you read about earlier.
-3. `LESSONPLAN`: this document is meant for teachers as a reference. However, as a student don't be shy to take a look at it as well!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### How to study
+### Analyzing the Bundle Size
 
-Let's say you are just starting out with the Databases module. This is what you do...
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-1. The week always starts on **Wednesday**. First thing you'll do is open the `README.md` for that week. For the first week of `Databases`, that would be [Week1 Reading](/Week1/README.md)
-2. You spend **Wednesday** and **Thursday** going over the resources and try to get a basic understanding of the concepts. In the meanwhile, you'll also implement any feedback you got on last week's homework (from the Node.js module)
-3. On **Friday** you start with the homework, found in the `MAKEME.md`. For the first week of `React`, that would be [Week1 Homework](/Week1/MAKEME.md)
-4. You spend **Friday** and **Saturday** playing around with the exercises and write down any questions you might have
-5. **DEADLINE 1**: You'll submit any questions you might have before **Saturday 23.59**, in the class channel
-6. On **Sunday** you'll attend class. It'll be of the Q&A format, meaning that there will be no new material. Instead your questions shall be discussed and you can learn from others
-7. You spend **Monday** and **Tuesday** finalizing your homework
-8. **DEADLINE 2**: You submit your homework to the right channels (GitHub) before **Tuesday 23.59**. If you can't make it on time, please communicate it with your mentor
-9. Start the new week by going back to point 1!
+### Making a Progressive Web App
 
-In summary:
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-![Weekflow](assets/weekflow.png)
+### Advanced Configuration
 
-To have a more detailed overview of the guidelines, please read [this document](https://docs.google.com/document/d/1JUaEbxMQTyljAPFsWIbbLwwvvIXZ0VCHmCCN8RaeVIc/edit?usp=sharing) or ask your mentor/class on Slack!
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
-## Planning
+### Deployment
 
-| Week | Topics                                                  | Reading Materials                | Homework                         |
-| ---- | ------------------------------------------------------- | -------------------------------- | -------------------------------- |
-| 1.   | What is React, JSX, State & Props, Deploy a static site | [Readings W1](./week1/README.md) | [Homework W1](./week1/MAKEME.md) |
-| 2.   | API calls, Testing                                      | [Readings W2](./week2/README.md) | [Homework W2](./week2/MAKEME.md) |
-| 3.   | Client-side routing, Context, Custom hooks              | [Readings W3](./week3/README.md) | [Homework W3](./week3/MAKEME.md) |
-| 4.   | Project!                                                | [Readings W4](./week4/README.md) |                                  |
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
 
-## Finished?
+### `npm run build` fails to minify
 
-Did you finish the module? Impressive!
-
-If you feel ready for the **final** challenge, click [here](https://www.github.com/HackYourFuture/Project) to go to Project!
-
-_The HackYourFuture curriculum is subject to CC BY copyright. This means you can freely use our materials, but just make sure to give us credit for it :)_
-
-<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
